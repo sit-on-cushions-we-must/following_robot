@@ -114,6 +114,7 @@ void loop() {
 //The following logic
 ////////////////////////////////////////////////////////////////////////////////
 
+  // if the right sensor sees something
   if ((rCm > 6) and (rCm < 20)) { // ignore stuff closer than 1 cm and further than 100 cm.
     // turn left
     forwardRight();
@@ -128,6 +129,7 @@ void loop() {
     digitalWrite(right2, LOW);
   }
 
+  // if the middle sensor sees something
   if ((mCm > 6) and (mCm < 20)) { // ignore stuff closer than 1 cm and further than 100 cm.
     // drive straight
     digitalWrite(left1, HIGH);
@@ -145,6 +147,8 @@ void loop() {
     digitalWrite(right2, LOW);
   }
 
+
+  // if the left sensor sees something
   if ((lCm > 6) and (lCm < 20)) { // ignore stuff closer than 1 cm and further than 100 cm.
     // turn left
     forwardLeft();
