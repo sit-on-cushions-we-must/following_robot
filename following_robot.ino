@@ -1,3 +1,20 @@
+/*
+ This is code for a robot that detects objects and drives towards them
+ the bot has 3 ultrasonic rangefinders to detect objects.
+
+ The object following logic:
+
+ * If there is something to the left of the robot turn left.
+ * If there is something to the right of the robot turn right.
+ * If there is something in front of the robot drive straight.
+ * If there is nothing in any direction stop.
+
+ This codes github repo: https://github.com/sit-on-cushions-we-must/following_robot
+ wiring diagrams and assembly guides can be found here:
+
+ This code is licensed under the MIT license: https://mit-license.org/ 
+*/
+
 
 // the motor driver variables
 const int left1 = 2;
