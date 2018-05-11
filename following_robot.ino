@@ -39,7 +39,7 @@ void forward() {
   digitalWrite(left2, LOW);
   digitalWrite(right1, LOW);
   digitalWrite(right2, HIGH);
-  delay(1000);
+  delay(500);
 }
 
 
@@ -51,7 +51,7 @@ void forwardLeft() {
   digitalWrite(left2, LOW);
   digitalWrite(right1, LOW);
   digitalWrite(right2, LOW);
-  delay(1000);
+  delay(200);
 }
 
 
@@ -63,7 +63,7 @@ void forwardRight() {
   digitalWrite(left2, LOW);
   digitalWrite(right1, LOW);
   digitalWrite(right2, HIGH);
-  delay(1000);
+  delay(200);
 }
 
 

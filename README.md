@@ -28,3 +28,35 @@ You will need the Arduino IDE to upload the code to your Arduino.
 * Some standoffs to mount the Arduino and motor driver(optional, you can just
   tape them on to the chassis).
 * Cardboard, to mount the three sensors to the front of the robot.
+* Tape
+
+
+Bend a cardboard strip into three places, and tape the sensors to it, like this:
+![sensor mount](https://aaalearn.mystagingwebsite.com/wp-content/uploads/2018/05/mounting_sensors.jpg)
+Then tape that to the front of the chassis.
+
+Then mount the Arduino and motor driver to the chassis with standoffs, or just tape
+them onto it, if you have a metal chassis put a sheet of paper or something
+under the Arduino and motor driver so they don't short out on the chassis.
+
+
+## Wiring
+
+| Arduino        | HC-SR04 rangefinders |
+| :------------- | :------------------- |
+| Digital pin12  | Left sensor Echo     |
+| Digital pin11  | Middle sensor Echo   |
+| Digital pin10  | Right sensor Echo    |
+| Digital pin9   | Left sensor Trigger  |
+| Digital pin8   | Middle sensor Trigger|
+| Digital pin7   | Right sensor Trigger |
+| GND            | GND                  |
+| 5 volts        | PWR                  |
+
+
+| Arduino        | L293D motor driver   |
+| :------------- | :------------------- |
+| Digital pin2   | Left motor pin1      |
+| Digital pin3   | Left motor pin2      |
+| Digital pin4   | Right motor pin1     |
+| Digital pin9   | Right motor pin2     |
