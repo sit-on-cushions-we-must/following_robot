@@ -31,16 +31,27 @@ const int trigL = 9;
 const int trigM = 8;
 const int trigR = 7;
 
+/*
+ moves the bot forward
+*/
+void forward() {
+  digitalWrite(left1, HIGH);
+  digitalWrite(left2, LOW);
+  digitalWrite(right1, LOW);
+  digitalWrite(right2, HIGH);
+  delay(1000);
+}
+
 
 /*
  turns the bot to the left
 */
 void forwardLeft() {
-  // turn left for a bit
   digitalWrite(left1, HIGH);
   digitalWrite(left2, LOW);
   digitalWrite(right1, LOW);
   digitalWrite(right2, LOW);
+  delay(1000);
 }
 
 
@@ -48,11 +59,11 @@ void forwardLeft() {
  turns the bot to the right
 */
 void forwardRight() {
-  // turn right for a bit
   digitalWrite(left1, LOW);
   digitalWrite(left2, LOW);
-  digitalWrite(right1, HIGH);
-  digitalWrite(right2, LOW);
+  digitalWrite(right1, LOW);
+  digitalWrite(right2, HIGH);
+  delay(1000);
 }
 
 
@@ -131,7 +142,7 @@ void loop() {
 //The following logic
 ////////////////////////////////////////////////////////////////////////////////
 
-  // if the right sensor sees something
+   // if the right sensor sees something
   if ((rCm > 6) and (rCm < 20)) { // ignore stuff closer than 1 cm and further than 100 cm.
     // turn left
     forwardRight();
@@ -146,13 +157,11 @@ void loop() {
     digitalWrite(right2, LOW);
   }
 
+
   // if the middle sensor sees something
   if ((mCm > 6) and (mCm < 20)) { // ignore stuff closer than 1 cm and further than 100 cm.
-    // drive straight
-    digitalWrite(left1, HIGH);
-    digitalWrite(left2, LOW);
-    digitalWrite(right1, HIGH);
-    digitalWrite(right2, LOW);
+    // turn left
+    forward();
     // send readings to the computer
     Serial.print(mCm);
     Serial.println("mCm");
