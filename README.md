@@ -31,9 +31,11 @@ You will need the Arduino IDE to upload the code to your Arduino.
 * Tape
 
 
-Bend a cardboard strip into three places, and tape the sensors to it, like this:
-![sensor mount](https://aaalearn.mystagingwebsite.com/wp-content/uploads/2018/05/mounting_sensors.jpg)
+Bend a cardboard strip into three places, and tape the sensors to it.
 Then tape that to the front of the chassis.
+
+![sensor mount](https://aaalearn.mystagingwebsite.com/wp-content/uploads/2018/05/mounting_sensors.jpg)
+
 
 Then mount the Arduino and motor driver to the chassis with standoffs, or just tape
 them onto it, if you have a metal chassis put a sheet of paper or something
@@ -60,3 +62,15 @@ under the Arduino and motor driver so they don't short out on the chassis.
 | Digital pin3   | Left motor pin2      |
 | Digital pin4   | Right motor pin1     |
 | Digital pin9   | Right motor pin2     |
+
+**Diagram:**
+
+![wiring](https://aaalearn.mystagingwebsite.com/wp-content/uploads/2018/05/follower_diagram.png)
+
+
+##### Licensing:
+
+All the photos and diagrams for this project are under the Creative Commons Attribution-ShareAlike 4.0 International License.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+All the code is under the MIT license: http://mit-license.org/
