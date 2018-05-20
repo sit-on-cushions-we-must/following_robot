@@ -81,7 +81,7 @@ void setup() {
   pinMode(echoM, INPUT);
   pinMode(echoR, INPUT);
 
-  Serial.begin(9600);
+  Serial.begin(9600); // for debugging
 }
 
 void loop() {
@@ -142,7 +142,7 @@ void loop() {
 //The following logic
 ////////////////////////////////////////////////////////////////////////////////
 
-   // if the right sensor sees something
+  // if the right sensor sees something
   if ((rCm > 6) and (rCm < 20)) { // ignore stuff closer than 1 cm and further than 100 cm.
     // turn left
     forwardRight();
