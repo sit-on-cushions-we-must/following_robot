@@ -36,7 +36,7 @@ You will need the Arduino IDE to upload the code to your Arduino.
 * A motor driver, I used an L293D.
 * 2 DC motors.
 * 2 wheels.
-* A castor.
+* A caster.
 * A robot chassis.
 * Some standoffs to mount the Arduino and motor driver(optional, you can just
   tape them on to the chassis).
@@ -44,7 +44,7 @@ You will need the Arduino IDE to upload the code to your Arduino.
 * Tape
 
 
-Bend a cardboard strip into three places, and tape the sensors to it.
+Bend a cardboard strip in three places, and tape the sensors to it.
 Then tape that to the front of the chassis, like this:
 
 ![sensor mount](https://aaalearn.mystagingwebsite.com/wp-content/uploads/2018/05/mounting_sensors.jpg)
