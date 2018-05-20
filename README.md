@@ -4,6 +4,19 @@ The bot has three ultrasonic rangefinders on the front, one pointing forward,
 one to the left and one to the right, if something comes in the way of the
 rangefinders the robot moves towards it.
 
+**The following logic:**
+
+* If the forward sensor sees something go forward.
+* If the left sensor sees something turn left.
+* If the right sensor sees something turn right.
+* If none of the sensors see anything stop.
+
+In the code I made the bot ignore things that are further away than 20 centimeters
+as well as things that are closer than 6 centimeters, so if the bot drives up to
+a wall or up to you it stops when it gets close and if something is far away
+from it then it doesn't go to it.
+
+
 ## Using the code
 You will need the Arduino IDE to upload the code to your Arduino.
 
@@ -32,7 +45,7 @@ You will need the Arduino IDE to upload the code to your Arduino.
 
 
 Bend a cardboard strip into three places, and tape the sensors to it.
-Then tape that to the front of the chassis.
+Then tape that to the front of the chassis, like this:
 
 ![sensor mount](https://aaalearn.mystagingwebsite.com/wp-content/uploads/2018/05/mounting_sensors.jpg)
 
