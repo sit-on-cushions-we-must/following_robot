@@ -12,7 +12,8 @@
  This codes github repo: https://github.com/sit-on-cushions-we-must/following_robot
  wiring diagrams and assembly guides can be found here:
 
- This code is licensed under the MIT license: https://mit-license.org/ 
+ Author: cautiouspotato
+ This code is licensed under the MIT license: https://mit-license.org/
 */
 
 
@@ -31,9 +32,7 @@ const int trigL = 9;
 const int trigM = 8;
 const int trigR = 7;
 
-/*
- moves the bot forward
-*/
+/* moves the bot forward */
 void forward() {
   digitalWrite(left1, HIGH);
   digitalWrite(left2, LOW);
@@ -43,9 +42,7 @@ void forward() {
 }
 
 
-/*
- turns the bot to the left
-*/
+/* turns the bot to the left */
 void forwardLeft() {
   digitalWrite(left1, HIGH);
   digitalWrite(left2, LOW);
@@ -55,15 +52,21 @@ void forwardLeft() {
 }
 
 
-/*
- turns the bot to the right
-*/
+/* turns the bot to the right */
 void forwardRight() {
   digitalWrite(left1, LOW);
   digitalWrite(left2, LOW);
   digitalWrite(right1, LOW);
   digitalWrite(right2, HIGH);
   delay(200);
+}
+
+/* turn off all motors */
+void stop() {
+    digitalWrite(left1, LOW);
+    digitalWrite(left2, LOW);
+    digitalWrite(right1, LOW);
+    digitalWrite(right2, LOW);
 }
 
 
@@ -150,11 +153,7 @@ void loop() {
     Serial.print(rCm);
     Serial.println("rCm");
   } else {
-    // stop the robot
-    digitalWrite(left1, LOW);
-    digitalWrite(left2, LOW);
-    digitalWrite(right1, LOW);
-    digitalWrite(right2, LOW);
+    stop();
   }
 
 
@@ -166,11 +165,7 @@ void loop() {
     Serial.print(mCm);
     Serial.println("mCm");
   } else {
-    // stop the robot
-    digitalWrite(left1, LOW);
-    digitalWrite(left2, LOW);
-    digitalWrite(right1, LOW);
-    digitalWrite(right2, LOW);
+    stop();
   }
 
 
@@ -182,11 +177,7 @@ void loop() {
     Serial.print(lCm);
     Serial.println("lCm");
   } else {
-    // stop the robot
-    digitalWrite(left1, LOW);
-    digitalWrite(left2, LOW);
-    digitalWrite(right1, LOW);
-    digitalWrite(right2, LOW);
+    stop();
   }
 }
 
